@@ -15,6 +15,7 @@
 * Default port will be 9001, so to access the application you need to click on http://localhost:9001
 * By default hybris will connect to HSQL database, If we want to chane we can add the new database configuration under local.properties file.
 * Stopping the server : We need to press the Ctrl+C to stop the server(graceful shutdown)
+
 ## Initialization:
   One of the goals of the initialization process is to prepare the data to your store.
   
