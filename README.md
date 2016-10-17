@@ -41,8 +41,8 @@ for that we need to update the createProjectData method in the above class to ad
 3) extension -- name of extension
 
 ## Dynamic Attribute:
- <persistence type="dynamic" attributeHandler="dynamicHybrisCustomerAttributeBean" />
-Means this value will not be persisted in the database. We can handle this attribute by using DynamicAttribute handler.
+< persistence type="dynamic" attributeHandler="dynamicHybrisCustomerAttributeBean" />
+ Means this value will not be persisted in the database. We can handle this attribute by using DynamicAttribute handler.
 According to the requirement we can add modifiers like read/write etc.
 
 we need to cretae a java class which will implements the DynamicAttributeHandler interface, we need to provide the defination
