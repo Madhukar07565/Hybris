@@ -128,7 +128,7 @@ then restart the server to apply the spring related changes.
 
 Then place the csv file in the hot folder then if file processed then it will move to acrhive directory.
 
-How PK will be generated in hybris?
+### How PK will be generated in hybris?
 -- It is the combination of
 1) typeCode of that type
 2) getClusterId()
