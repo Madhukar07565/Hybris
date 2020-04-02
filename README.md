@@ -139,3 +139,11 @@ so that is the reason typecode should be unique over the hybris system.
 
 Improve the performance ImpEx:
 https://wiki.hybris.com/display/~brendan.dobbs@hybris.com/Improving+ImpEx+Performance
+
+## How to update the licence expiry of hybris server:
+
+My SQL Database: 
+use <schema_name>;
+SET SQL_SAFE_UPDATES = 0;
+update users set createdTS=sysdate()+ INTERVAL 15 DAY + INTERVAL 1 YEAR,modifiedTS=sysdate()+ INTERVAL 15 DAY + INTERVAL 1 YEAR;
+commit;
