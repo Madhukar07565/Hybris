@@ -151,3 +151,7 @@ SET SQL_SAFE_UPDATES = 0;
 update users set createdTS=sysdate()+ INTERVAL 15 DAY + INTERVAL 1 YEAR,modifiedTS=sysdate()+ INTERVAL 15 DAY + INTERVAL 1 YEAR;
 
 commit;
+
+## How to check whether database locked or not:
+
+select * from SYSTEMINIT;  Then check whether the locked attribute is enabled or not.
