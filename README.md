@@ -155,3 +155,6 @@ commit;
 ## How to check whether database locked or not:
 
 select * from SYSTEMINIT;  Then check whether the locked attribute is enabled or not.
+
+## Solr query useful links:
+http://yonik.com/solr/query-syntax/
