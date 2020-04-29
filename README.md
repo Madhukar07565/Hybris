@@ -161,6 +161,7 @@ http://yonik.com/solr/query-syntax/
 
 ## Read Messages from JMS Queue
 
+```
 import org.springframework.jms.core.BrowserCallback;
 import javax.jms.JMSException;
 import javax.jms.QueueBrowser;
@@ -180,3 +181,5 @@ jmsTemplate.browse("<QUEUE-NAME>", new BrowserCallback<Integer>() {
         return counter;
     }
 });
+
+```
