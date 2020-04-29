@@ -158,3 +158,25 @@ select * from SYSTEMINIT;  Then check whether the locked attribute is enabled or
 
 ## Solr query useful links:
 http://yonik.com/solr/query-syntax/
+
+## Read Messages from JMS Queue
+
+import org.springframework.jms.core.BrowserCallback;
+import javax.jms.JMSException;
+import javax.jms.QueueBrowser;
+import javax.jms.Session;
+
+jmsTemplate.browse("<QUEUE-NAME>", new BrowserCallback<Integer>() {
+	public Integer doInJms(Session session, QueueBrowser browser) throws JMSException {
+    	def enumeration = browser.getEnumeration();
+        	int counter = 0;
+            while (enumeration.hasMoreElements()) {
+            	def msg = enumeration.nextElement();
+            	byte[] bytes = new byte[msg.getBodyLength()];
+				msg.readBytes(bytes);        	
+                out.println(String.format("\tFound : %s", new String(bytes)));
+                counter += 1;
+            }
+        return counter;
+    }
+});
