@@ -186,8 +186,7 @@ jmsTemplate.browse("<QUEUE-NAME>", new BrowserCallback<Integer>() {
 ## How to run cron job only on admin nodes.
 Assign all the cronjobs to a specific node group. Let us call the node group as ‘backoffice’.
 
-INSERT_UPDATE CronJob;code[unique=true];job(code);nodeGroup
-;myCustomCronJob;myCustomJob;backoffice
+INSERT_UPDATE CronJob;code[unique=true];job(code);nodeGroup<br/>;myCustomCronJob;myCustomJob;backoffice
 
 Add the below property to the local.properties file of the cluster nodes where you would like to run the CronJobs.
 cluster.node.groups=backoffice
