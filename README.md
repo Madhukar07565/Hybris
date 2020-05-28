@@ -190,3 +190,26 @@ INSERT_UPDATE CronJob;code[unique=true];job(code);nodeGroup<br/>;myCustomCronJob
 
 Add the below property to the local.properties file of the cluster nodes where you would like to run the CronJobs.
 cluster.node.groups=backoffice
+
+## Groovy Script to get the database connection details
+
+```
+import java.sql.SQLException;
+import de.hybris.platform.core.Registry;
+import de.hybris.platform.jdbcwrapper.HybrisDataSource;
+
+
+try
+{
+	HybrisDataSource dataSource = Registry.getCurrentTenant().getDataSource();
+	println("No of active connections " + dataSource.getConnectionPool().getNumActive());
+	println("No of max active connections " + dataSource.getConnectionPool().getMaxActive());
+	println("No of idle connections " + dataSource.getConnectionPool().getNumIdle());
+	println("No of Max Physical Open connections " + dataSource.getConnectionPool().getMaxPhysicalOpen());
+	println("No of Physical Open connections " + dataSource.getConnectionPool().getNumPhysicalOpen());	
+}
+catch (final SQLException e)
+{
+    LOG.error("Error!!");
+}
+```
