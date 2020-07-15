@@ -213,3 +213,8 @@ catch (final SQLException e)
     LOG.error("Error!!");
 }
 ```
+
+### Useful blogs for hybris:
+https://dmitrykrivenko.blogspot.com/ 
+https://hybrisarchitect.com/
+https://hybrismart.com/
