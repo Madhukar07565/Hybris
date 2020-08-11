@@ -215,6 +215,9 @@ catch (final SQLException e)
 ```
 
 ### Useful blogs for hybris:
-https://dmitrykrivenko.blogspot.com/ 
-https://hybrisarchitect.com/
-https://hybrismart.com/
+https://dmitrykrivenko.blogspot.com/ <br/>
+https://hybrisarchitect.com/ <br/>
+https://hybrismart.com/ <br/>
+
+### SAP Commerce 123
+https://help.sap.com/viewer/3fb5dcdfe37f40edbac7098ed40442c0/1905/en-US/a1ef894ac89545e79c470c726b487d13.html
