@@ -225,3 +225,6 @@ https://help.sap.com/viewer/3fb5dcdfe37f40edbac7098ed40442c0/1905/en-US/a1ef894a
 
 ### SCPI Documentation
 https://medium.com/@fsp_bgd
+
+### Catalog Sync
+https://www.sap.com/cxworks/article/432582396/catalog_synchronization 
