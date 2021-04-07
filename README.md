@@ -229,3 +229,6 @@ https://medium.com/@fsp_bgd
 ### Catalog Sync
 https://answers.sap.com/questions/12770915/how-to-sync-bulk-products-based-on-product-code-to.html
 https://www.sap.com/cxworks/article/432582396/catalog_synchronization 
+
+### Derease build time if no data model cahnges
+https://stackoverflow.com/questions/59667306/how-to-decrease-hybris-build-time-in-case-the-data-model-does-not-need-an-update
