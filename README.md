@@ -232,3 +232,6 @@ https://www.sap.com/cxworks/article/432582396/catalog_synchronization
 
 ### Derease build time if no data model cahnges
 https://stackoverflow.com/questions/59667306/how-to-decrease-hybris-build-time-in-case-the-data-model-does-not-need-an-update
+
+### Increase memory of hybris server to avoid out of memory issue
+tomcat.generaloptions=${tomcat.jdkmodules.config} -Djava.locale.providers=COMPAT,CLDR -Xmx8G -ea -Dcatalina.base=%CATALINA_BASE% -Dcatalina.home=%CATALINA_HOME% -Dfile.encoding=UTF-8 -Djava.util.logging.config.file=jdk_logging.properties -Djava.io.tmpdir="${HYBRIS_TEMP_DIR}"
