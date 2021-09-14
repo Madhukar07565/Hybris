@@ -235,3 +235,6 @@ https://stackoverflow.com/questions/59667306/how-to-decrease-hybris-build-time-i
 
 ### Increase memory of hybris server to avoid out of memory issue
 tomcat.generaloptions=${tomcat.jdkmodules.config} -Djava.locale.providers=COMPAT,CLDR -Xmx8G -ea -Dcatalina.base=%CATALINA_BASE% -Dcatalina.home=%CATALINA_HOME% -Dfile.encoding=UTF-8 -Djava.util.logging.config.file=jdk_logging.properties -Djava.io.tmpdir="${HYBRIS_TEMP_DIR}"
+
+### Containerized SAP Commerce
+https://help.sap.com/viewer/aa417173fe4a4ba5a473c93eb730a417/v2105/en-US/a5cb538ba19f4502865c53953f6f5e3e.html
