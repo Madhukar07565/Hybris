@@ -238,3 +238,6 @@ tomcat.generaloptions=${tomcat.jdkmodules.config} -Djava.locale.providers=COMPAT
 
 ### Containerized SAP Commerce
 https://help.sap.com/viewer/aa417173fe4a4ba5a473c93eb730a417/v2105/en-US/a5cb538ba19f4502865c53953f6f5e3e.html
+
+### Run one unit test from command prompt
+ant unittests -Dtestclasses.suppress.junit.tenant=true -Dtest="fully qualified class name"
